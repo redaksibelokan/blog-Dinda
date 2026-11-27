@@ -14,7 +14,10 @@ content:
       primary: title
       fields: [title, category, published_on, featured]
       sort: [published_on, title]
-      order: desc
+      default:
+        sort: published_on
+        order: desc
+      search: [title, category, deck]
     operations:
       rename: false
     fields:
