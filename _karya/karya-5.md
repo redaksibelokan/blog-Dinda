@@ -7,7 +7,7 @@ published_on: 2024-07-03
 deck: Sebuah pembacaan atas dunia batin tokoh dalam karya sastra.
 cover: /assets/uploads/11194.jpg
 cover_alt: Cover Esai atas Novel "Pukul Setengah Lima"
-featured: true
+featured: false
 sourceName: Retizen
 source: https://retizen.republika.co.id/posts/317296/menyelami-konflik-batin-dalam-novel-pukul-setengah-lima-dengan-kacamata-psikologi-sastra
 ---
