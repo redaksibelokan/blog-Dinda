@@ -3,6 +3,7 @@ title: Menyelami Konflik Batin dalam Novel Pukul Setengah Lima dengan Kacamata
   Psikologi Sastra
 category: Esai
 published: true
+published_on: 2024-07-03
 deck: Sebuah pembacaan atas dunia batin tokoh dalam karya sastra.
 cover: /assets/uploads/11194.jpg
 cover_alt: Cover Esai atas Novel "Pukul Setengah Lima"
