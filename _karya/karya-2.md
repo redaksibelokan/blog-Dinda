@@ -6,7 +6,7 @@ published_on: 2024-03-06
 deck: Cerpen yang diadaptasi menjadi film pendek dengan judul yang sama.
 cover: /assets/uploads/11192-1.jpg
 cover_alt: Cover Cerpen "Di Balik Jeruji Besi"
-featured: false
+featured: true
 sourceName: Cerpen
 source: https://share.google/tXCMHRxLRHbk36fi1
 ---
