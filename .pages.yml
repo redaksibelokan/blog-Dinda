@@ -1,6 +1,14 @@
 media:
-  input: assets/uploads
-  output: /assets/uploads
+  - name: article_images
+    label: Foto dan cover tulisan
+    input: assets/uploads
+    output: /assets/uploads
+    categories: [image]
+  - name: website_images
+    label: Foto dan identitas website
+    input: assets
+    output: /assets
+    categories: [image]
 content:
   - name: karya
     label: Kelola Tulisan
@@ -45,6 +53,7 @@ content:
         label: Gambar cover
         type: image
         options:
+          media: article_images
           rename: safe
       - name: cover_alt
         label: Deskripsi gambar
@@ -65,4 +74,195 @@ content:
         type: rich-text
         options:
           format: markdown
+          media: article_images
           rename: safe
+
+  - name: home
+    label: "Beranda"
+    type: file
+    path: _data/home.json
+    format: json
+    fields:
+      - name: poster
+        label: "Poster desktop utuh (rasio 1338 × 900; teks dan foto menyatu)"
+        type: image
+        required: true
+        options:
+          media: website_images
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - name: portrait
+        label: "Foto beranda Android"
+        type: image
+        required: true
+        options:
+          media: website_images
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - name: hero_name
+        label: "Nama besar di beranda Android, satu baris per kata"
+        type: text
+        required: true
+      - name: hero_intro
+        label: "Pengantar beranda Android"
+        type: text
+        required: true
+      - name: featured_heading
+        label: "Judul bagian karya pilihan"
+        type: text
+        required: true
+      - name: featured_intro
+        label: "Pengantar karya pilihan"
+        type: text
+        required: true
+      - name: works_heading
+        label: "Judul daftar tulisan"
+        type: string
+        required: true
+      - name: works_intro
+        label: "Pengantar daftar tulisan"
+        type: text
+        required: true
+      - name: profile_intro
+        label: "Pengantar profil di beranda"
+        type: text
+        required: true
+  - name: profile
+    label: "Profil Penulis"
+    type: file
+    path: _data/profile.json
+    format: json
+    fields:
+      - name: photo
+        label: "Foto halaman Tentang"
+        type: image
+        required: true
+        options:
+          media: website_images
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - name: photo_alt
+        label: "Deskripsi foto"
+        type: string
+        required: true
+      - name: heading
+        label: "Judul halaman Tentang"
+        type: string
+        required: true
+      - name: intro
+        label: "Pengantar profil"
+        type: text
+        required: true
+      - name: bio
+        label: "Biografi lengkap"
+        type: rich-text
+        required: true
+        options:
+          format: markdown
+          media: website_images
+      - name: author_bio
+        label: "Bio singkat di akhir artikel"
+        type: text
+        required: true
+  - name: identity
+    label: "Identitas Website dan Kontak"
+    type: file
+    path: _data/identity.json
+    format: json
+    fields:
+      - name: name
+        label: "Nama lengkap penulis"
+        type: string
+        required: true
+      - name: brand
+        label: "Nama logo / merek"
+        type: string
+        required: true
+      - name: location
+        label: "Lokasi"
+        type: string
+        required: true
+      - name: role
+        label: "Profesi penulis"
+        type: string
+        required: true
+      - name: logo
+        label: "Logo header dan footer (PNG transparan dianjurkan)"
+        type: image
+        required: true
+        options:
+          media: website_images
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - name: favicon
+        label: "Favicon / ikon browser"
+        type: image
+        required: true
+        options:
+          media: website_images
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - name: share_image
+        label: "Gambar bawaan kartu berbagi WhatsApp"
+        type: image
+        required: true
+        options:
+          media: website_images
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - name: description
+        label: "Deskripsi SEO website"
+        type: text
+        required: true
+      - name: footer_text
+        label: "Narasi footer"
+        type: text
+        required: true
+      - name: email
+        label: "Alamat email"
+        type: string
+        required: true
+        pattern: '^[^ @]+@[^ @]+[.][^ @]+$'
+      - name: instagram_personal
+        label: "Username Instagram pribadi (tanpa @)"
+        type: string
+        required: true
+        pattern: '^[A-Za-z0-9_.]+$'
+      - name: instagram_brand
+        label: "Username Instagram ADA suara (tanpa @)"
+        type: string
+        required: true
+        pattern: '^[A-Za-z0-9_.]+$'
+      - name: tiktok
+        label: "Username TikTok (tanpa @)"
+        type: string
+        required: true
+        pattern: '^[A-Za-z0-9_.]+$'
+  - name: contact
+    label: "Halaman Kontak"
+    type: file
+    path: _data/contact.json
+    format: json
+    fields:
+      - name: heading
+        label: "Judul kontak"
+        type: string
+        required: true
+      - name: intro
+        label: "Narasi kontak"
+        type: text
+        required: true
+  - name: archive
+    label: "Halaman Karya"
+    type: file
+    path: _data/archive.json
+    format: json
+    fields:
+      - name: heading
+        label: "Judul arsip karya"
+        type: string
+        required: true
+      - name: intro
+        label: "Pengantar arsip"
+        type: text
+        required: true

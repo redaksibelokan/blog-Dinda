@@ -1,3 +1,6 @@
 # ADA suara — website Adinda Destiana Aisyah
 
 Hosting GitHub Pages (main, root) dan domain adindadestiana.my.id. Jekyll membangun halaman dari koleksi _karya. Kelola tulisan di https://app.pagescms.org/ menggunakan akun GitHub yang berizin, pilih blog-Dinda/main. Simpan hanya tulisan siap terbit karena repo publik. Untuk draf gunakan penyimpanan pribadi di luar repository. Semua penyimpanan CMS ke main akan memicu build Pages apabila integrasi aktif. Cover disimpan di assets/uploads. Tanggal adalah metadata, bukan jadwal publikasi. Sembilan arsip asli dipindahkan tanpa mengarang naskah. File articles.json adalah cadangan prototipe, bukan sumber CMS. Halaman demonstrasi tidak tercantum di arsip dan beranda. Jangan ubah nama file karya lama jika ingin mempertahankan URL.
+
+
+CMS juga mengelola Beranda, Profil Penulis, Identitas Website dan Kontak, Halaman Kontak serta Halaman Karya melalui _data/*.json. Poster desktop adalah desain utuh dengan teks dan foto menyatu; unggah poster baru berasio 1338:900 untuk mengubahnya, sedangkan potret Android dapat diganti terpisah. Nama/role yang tercetak pada poster perlu disesuaikan pada file gambar itu sendiri. Jangan hapus foto yang masih dipakai dari media.
