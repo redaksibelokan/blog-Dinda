@@ -1,0 +1,14 @@
+/* Profil editorial — khusus halaman Tentang. */
+.about-editorial{max-width:1080px}
+.about-editorial .page-heading{padding:34px 0 24px}
+.about-editorial .page-heading h1{font-size:clamp(38px,5.25vw,72px);line-height:1.02;max-width:980px;margin:12px 0 14px;text-wrap:balance}
+.about-editorial .page-heading p{max-width:790px;font:italic clamp(17px,1.7vw,21px)/1.5 Georgia,serif;color:#765b49}
+.about-editorial .about-page{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);align-items:start;gap:clamp(24px,3.4vw,46px);padding:26px 0 40px}
+.about-editorial .about-photo-real{width:100%;aspect-ratio:1;max-width:none;margin:0;display:block;overflow:hidden;background:#d3bca7;border:1px solid #a98a7460}
+.about-editorial .about-photo-real img{display:block;object-fit:contain;object-position:center;width:100%;height:100%;filter:sepia(.13) saturate(.84) contrast(.97) brightness(1.015)}
+.about-editorial .profile-text{font:19px/1.72 Georgia,serif;color:#49362c;min-width:0}
+.about-editorial .profile-text p{margin:0 0 15px}
+.about-editorial .profile-text p:first-child:first-letter{font-size:3em;line-height:.8;margin:8px 8px 0 0;color:#795640}
+.about-editorial .profile-text .link{margin-top:3px;padding:9px 0;display:inline-block}
+@media(max-width:900px) and (min-width:761px){.about-editorial .profile-text{font-size:17px;line-height:1.65}.about-editorial .about-page{gap:24px}}
+@media(max-width:760px){.about-editorial .page-heading{padding:24px 0 17px}.about-editorial .page-heading h1{font-size:clamp(34px,9.5vw,54px);text-wrap:initial}.about-editorial .page-heading p{font-size:17px}.about-editorial .about-page{grid-template-columns:1fr;gap:19px;padding:18px 0 30px}.about-editorial .about-photo-real{width:100%;max-width:460px;margin:0 auto}.about-editorial .profile-text{font-size:18px;line-height:1.69}.about-editorial .profile-text p{margin-bottom:14px}}

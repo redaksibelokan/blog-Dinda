@@ -1,0 +1,10 @@
+DEPLOY BLOG ADINDA — Windows
+
+Ekstrak seluruh ZIP ini ke satu folder. Jalankan Jalankan-Deploy.cmd.
+Script memerlukan GitHub CLI (https://cli.github.com/). Jika belum tersedia, instal terlebih dahulu. Login dilakukan melalui browser resmi GitHub. Jangan bagikan token atau password ke chat.
+
+Script hanya menargetkan redaksibelokan/blog-Dinda. File dari website.zip diunggah dalam satu commit atomik menggunakan GitHub API, termasuk aset gambar. File lain dipertahankan. Script mencoba mengaktifkan Pages dan mengatur domain. Jika Pages membutuhkan repository public, script meminta persetujuan eksplisit. Script tidak mengubah repository Belokan, tidak membeli layanan, dan tidak mengubah DNS.
+
+Jika sudah terunggah, verifikasi domain di GitHub sebelum mengarahkan DNS. Pada penyedia domain: A @ 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153; CNAME www redaksibelokan.github.io. Jangan hapus record email. Aktifkan Enforce HTTPS setelah sertifikat tersedia.
+
+Script belum diuji pada akun GitHub asli dari lingkungan chat. Naskah lengkap karya lama belum tersedia; artikel contoh tetap berlabel demonstrasi.

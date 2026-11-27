@@ -1,0 +1,2 @@
+// Native disclosure navigation, also usable without JavaScript.
+(()=>{const menus=[...document.querySelectorAll('.quick-menu')];for(const m of menus){m.addEventListener('toggle',()=>{if(m.open)menus.forEach(other=>{if(other!==m)other.open=false})});m.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>m.open=false))}document.addEventListener('click',e=>menus.forEach(m=>{if(!m.contains(e.target))m.open=false}));document.addEventListener('keydown',e=>{if(e.key==='Escape')menus.forEach(m=>{if(m.open){m.open=false;m.querySelector('summary').focus()}})})})();
