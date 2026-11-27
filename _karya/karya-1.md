@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Perempuan yang Terlelap dalam Duka"
 category: "Cerpen"
 published_on: ""

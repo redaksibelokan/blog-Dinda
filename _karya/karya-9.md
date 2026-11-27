@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Cerita Roman Menarik Seorang “Gadis Garut” pada Abad XX (Review Novel)"
 category: "Resensi"
 published_on: ""

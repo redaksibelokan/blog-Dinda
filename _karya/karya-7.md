@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Fenomena Cerita 21+ di Ruang Sastra Digital"
 category: "Esai"
 published_on: "2021-11-01"

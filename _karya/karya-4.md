@@ -1,4 +1,5 @@
 ---
+published: true
 title: "(Resensi Novel) Jerit Perempuan Tentang Kawin Tangkap"
 category: "Resensi"
 published_on: "2022-05-01"

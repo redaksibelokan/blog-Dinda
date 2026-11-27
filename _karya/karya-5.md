@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Menyelami Konflik Batin dalam Novel Pukul Setengah Lima dengan Kacamata Psikologi Sastra"
 category: "Esai"
 published_on: ""

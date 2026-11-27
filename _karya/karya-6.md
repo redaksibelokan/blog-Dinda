@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Eksistensi Karya Sastra di Tengah Perbedaan “Selera” Masyarakat"
 category: "Esai"
 published_on: "2022-01-15"

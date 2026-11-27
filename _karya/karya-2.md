@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Di Balik Jeruji Besi"
 category: "Cerpen"
 published_on: ""

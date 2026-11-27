@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Perempuan dan Kemampuan BerDiKaRi"
 category: "Esai"
 published_on: "2024-08-19"

@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Pinangan, Representasi Konflik Sosial yang Konkret"
 category: "Esai"
 published_on: ""
