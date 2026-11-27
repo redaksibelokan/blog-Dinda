@@ -1,12 +1,12 @@
 ---
 title: Menyelami Konflik Batin dalam Novel Pukul Setengah Lima dengan Kacamata
   Psikologi Sastra
-category: Resensi
+category: Esai
 published: true
 deck: Sebuah pembacaan atas dunia batin tokoh dalam karya sastra.
 cover: /assets/uploads/11194.jpg
-cover_alt: Cover Resensi "Pukul Setengah Lima"
-featured: false
+cover_alt: Cover Esai atas Novel "Pukul Setengah Lima"
+featured: true
 sourceName: Retizen
 source: https://retizen.republika.co.id/posts/317296/menyelami-konflik-batin-dalam-novel-pukul-setengah-lima-dengan-kacamata-psikologi-sastra
 ---
