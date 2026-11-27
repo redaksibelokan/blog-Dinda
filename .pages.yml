@@ -20,8 +20,8 @@ content:
       field: create
     view:
       primary: title
-      fields: [title, category, published_on, featured]
-      sort: [published_on, title]
+      fields: [title, published, category, published_on, featured]
+      sort: [published_on, title, published]
       default:
         sort: published_on
         order: desc
@@ -39,6 +39,11 @@ content:
         required: true
         options:
           values: [Cerpen, Esai, Resensi, Puisi]
+      - name: published
+        label: Status tulisan — Terbit / Draf
+        type: boolean
+        default: false
+        description: "Aktif = Terbit. Nonaktif = Draf (tidak tampil di website). Draf tetap tersimpan di repository publik, bukan privat."
       - name: published_on
         label: Tanggal terbit
         type: date
@@ -70,10 +75,12 @@ content:
         type: string
         pattern: "^https://.*$"
       - name: body
-        label: Isi tulisan — simpan hanya naskah siap terbit
+        label: Isi tulisan
+        description: Pilih teks untuk memakai Bold (B) atau Italic (I). Gunakan Editor untuk format visual, atau Source untuk Markdown.
         type: rich-text
         options:
           format: markdown
+          switcher: true
           media: article_images
           rename: safe
 

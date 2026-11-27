@@ -13,6 +13,7 @@ defaults:
       type: karya
     values:
       layout: article
+      published: false
 exclude:
   - README.md
   - BACA-DULU.txt

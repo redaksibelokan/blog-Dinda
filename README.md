@@ -4,3 +4,6 @@ Hosting GitHub Pages (main, root) dan domain adindadestiana.my.id. Jekyll memban
 
 
 CMS juga mengelola Beranda, Profil Penulis, Identitas Website dan Kontak, Halaman Kontak serta Halaman Karya melalui _data/*.json. Poster desktop adalah desain utuh dengan teks dan foto menyatu; unggah poster baru berasio 1338:900 untuk mengubahnya, sedangkan potret Android dapat diganti terpisah. Nama/role yang tercetak pada poster perlu disesuaikan pada file gambar itu sendiri. Jangan hapus foto yang masih dipakai dari media.
+
+
+Status tulisan: switch Published di CMS (aktif = Terbit; nonaktif = Draf). Default baru Draf. Jekyll tidak menghasilkan halaman dengan published: false, dan daftar publik hanya memilih published: true. Repository publik berarti isi dan gambar draf tetap dapat dibaca dari GitHub; jangan simpan naskah rahasia di CMS. Editor rich-text menggunakan Markdown; Bold dan Italic dipertahankan sebagai strong/em. Simpan perubahan untuk menjalankan deployment.
