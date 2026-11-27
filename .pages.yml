@@ -1,0 +1,65 @@
+media:
+  input: assets/uploads
+  output: /assets/uploads
+content:
+  - name: karya
+    label: Kelola Tulisan
+    type: collection
+    path: _karya
+    format: yaml-frontmatter
+    filename:
+      template: "{year}-{month}-{day}-{hour}{minute}{second}-{primary}.md"
+      field: create
+    view:
+      primary: title
+      fields: [title, category, published_on, featured]
+      sort: [published_on, title]
+      order: desc
+    operations:
+      rename: false
+    fields:
+      - name: title
+        label: Judul tulisan
+        type: string
+        required: true
+      - name: category
+        label: Kategori
+        type: select
+        required: true
+        options:
+          values: [Cerpen, Esai, Resensi, Puisi]
+      - name: published_on
+        label: Tanggal terbit
+        type: date
+        default: ""
+        options:
+          format: yyyy-MM-dd
+      - name: deck
+        label: Ringkasan dan deskripsi SEO
+        type: text
+        required: true
+      - name: cover
+        label: Gambar cover
+        type: image
+        options:
+          rename: safe
+      - name: cover_alt
+        label: Deskripsi gambar
+        type: string
+      - name: featured
+        label: Jadikan karya pilihan beranda
+        type: boolean
+        default: false
+      - name: sourceName
+        label: Nama media asal (jika pernah terbit)
+        type: string
+      - name: source
+        label: Tautan publikasi asli (HTTPS)
+        type: string
+        pattern: "^https://.*$"
+      - name: body
+        label: Isi tulisan — simpan hanya naskah siap terbit
+        type: rich-text
+        options:
+          format: markdown
+          rename: safe

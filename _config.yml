@@ -1,0 +1,20 @@
+title: Adinda Destiana Aisyah
+url: "https://adindadestiana.my.id"
+baseurl: ""
+timezone: Asia/Jakarta
+markdown: kramdown
+collections:
+  karya:
+    output: true
+    permalink: /artikel/:path.html
+defaults:
+  - scope:
+      path: ""
+      type: karya
+    values:
+      layout: article
+exclude:
+  - README.md
+  - BACA-DULU.txt
+  - Jalankan-Deploy.cmd
+  - articles.json
